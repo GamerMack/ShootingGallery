@@ -16,9 +16,28 @@ enum BackgroundType{
 }
 
 class GameScene: SKScene {
+    //Change Gun Label
+    var crossHairToggleControl: SKLabelNode?
+    
+    
+    //Player Stats
+    var numberOfBullets: Int = 5
+    var numberOfKills: Int = 0
+    
+    //HUD instance
+    let hud = HUD(newBulletTexture: SKTexture(image: #imageLiteral(resourceName: "icon_bullet_silver_long")), newScoreTexture: SKTexture(image: #imageLiteral(resourceName: "text_score")))
     
     //Background and CrossHair(Player)
     var background: SKSpriteNode?
+    
+    var currentCrossHairIndex: Int = 0
+    var crossHairTextures: [SKTexture] = [
+        SKTexture(image: #imageLiteral(resourceName: "crosshair_red_small")),
+        SKTexture(image: #imageLiteral(resourceName: "crosshair_red_large")),
+        SKTexture(image: #imageLiteral(resourceName: "crosshair_outline_small")),
+        SKTexture(image: #imageLiteral(resourceName: "crosshair_outline_large"))
+    ]
+    
     var mainCrossHair: SKSpriteNode?/**PROPERTY OBSERVER FOR POSITION OF mainCrossHair{
         didSet{
             let thresholdDistanceToFlyman: Double = 30.0;
@@ -80,8 +99,12 @@ class GameScene: SKScene {
         configureFlymanFor(parentNode: self)
         
         
-       
+        //Configure CrossHairToggle Control
+        configureCrossHairToggle(parentNode: self)
         
+        //Configure HUD display
+        configureHUDFor(parentNode: self)
+       
     }
     
     
@@ -101,8 +124,24 @@ class GameScene: SKScene {
            }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        //If the player runs out of bullets, he cannot fire anymore
+        if(numberOfBullets == 0) {
+            print("No more bullets")
+            return
+        }
+        
             for touch in touches {
+                
                 let touchPoint = touch.location(in: self)
+                
+                if let toggle = self.crossHairToggleControl{
+                    if toggle.contains(touchPoint){
+                        print("You changed guns")
+                        toggleMainCrosshair()
+                        return
+                    }
+                }
                 
                 if let crossHair = mainCrossHair, crossHair.contains(touchPoint){
                     wingmanRespondsToHitAt(touchLocation: touchPoint)
@@ -110,6 +149,9 @@ class GameScene: SKScene {
 
                 }
                
+                self.numberOfBullets -= 1
+                print("Updated number of bullets is: \(self.numberOfBullets)")
+
                
             }
     }
@@ -249,7 +291,8 @@ class GameScene: SKScene {
     }
     
     private func configureMainCrossHair(){
-        mainCrossHair = SKSpriteNode(imageNamed: "crosshair_red_large")
+        let crossHairTexture = crossHairTextures[currentCrossHairIndex]
+        mainCrossHair = SKSpriteNode(texture: crossHairTexture)
         mainCrossHair!.position = CGPoint.zero
         mainCrossHair?.zPosition = 10
         self.addChild(mainCrossHair!)
@@ -354,8 +397,12 @@ class GameScene: SKScene {
                     SKAction.wait(forDuration: 2.0),
                     SKAction.removeFromParent()
                     ]))
+                
+                self.numberOfKills += 1
+                print("Updated number of kills is: \(self.numberOfKills)")
             }
             
+           
             self.wingmanIsHit = false
             self.wingmanIsMoving = false
         }
@@ -369,7 +416,11 @@ class GameScene: SKScene {
                     SKAction.wait(forDuration: 2.0),
                     SKAction.removeFromParent()
                     ]))
+                self.numberOfKills += 1
+                print("Updated number of kills is: \(self.numberOfKills)")
             }
+            
+            
         }
     }
     
@@ -413,6 +464,54 @@ class GameScene: SKScene {
             flymanOriginalTextureIsRestored = true
         }
     }
+    
+    private func configureHUDFor(parentNode: SKNode){
+        var newHUDnode = hud.createHUDNodes(screenSize: self.size)
+        newHUDnode.zPosition = 5
+        parentNode.addChild(newHUDnode)
+    }
+    
+    
+    private func configureCrossHairToggle(parentNode: SKNode){
+        crossHairToggleControl = SKLabelNode(text: "Change Gun")
+        crossHairToggleControl?.horizontalAlignmentMode = .left
+        crossHairToggleControl?.verticalAlignmentMode = .top
+        /** TODO: Position of Node should be dependent on size of scene, not hardcoded**/
+        //let xPos = (self.size.width/2)
+        //let yPos = (-self.size.height/2)
+        //crossHairToggleControl?.position = CGPoint(x: xPos, y: yPos)
+        
+        crossHairToggleControl?.position = CGPoint(x: 80, y: -120)
+        crossHairToggleControl?.zPosition = 5
+        crossHairToggleControl?.color = SKColor.blue
+        crossHairToggleControl?.fontColor = SKColor.orange
+        
+        
+        if let crossHairToggle = crossHairToggleControl{
+            showDebuggingInfo()
+            print("The crossHairToggle is at x: \(crossHairToggle.position.x), and y: \(crossHairToggle.position.y)")
+
+            parentNode.addChild(crossHairToggle)
+
+        }
+    }
+    
+    private func toggleMainCrosshair(){
+        if let mainCrossHair = mainCrossHair{
+            if(currentCrossHairIndex < crossHairTextures.count-1){
+                currentCrossHairIndex += 1
+            } else {
+                currentCrossHairIndex = 0
+            }
+            
+            print("Crosshair index is now: \(currentCrossHairIndex)")
+            let nextCrossHairTexture = crossHairTextures[currentCrossHairIndex]
+            let changeTextureAction = SKAction.setTexture(nextCrossHairTexture)
+            mainCrossHair.run(changeTextureAction)
+        }
+    }
+
+
     
 
 }

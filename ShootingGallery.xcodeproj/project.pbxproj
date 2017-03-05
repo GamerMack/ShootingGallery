@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD46A2751E6C016E0050650B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46A2741E6C016E0050650B /* HUD.swift */; };
 		BD5256691E6BCA0700F7C530 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5256681E6BCA0700F7C530 /* Background.swift */; };
 		BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */; };
 		BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */; };
@@ -23,6 +24,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD46A2741E6C016E0050650B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		BD46A2781E6C14640050650B /* Flowing Rocks.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flowing Rocks.ogg"; sourceTree = "<group>"; };
+		BD46A2791E6C14640050650B /* Game Over.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Game Over.ogg"; sourceTree = "<group>"; };
+		BD46A27A1E6C14640050650B /* German Virtue.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "German Virtue.ogg"; sourceTree = "<group>"; };
+		BD46A27B1E6C14640050650B /* Italian Mom.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Italian Mom.ogg"; sourceTree = "<group>"; };
+		BD46A27C1E6C14640050650B /* Mishief Stroll.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mishief Stroll.ogg"; sourceTree = "<group>"; };
+		BD46A27D1E6C14640050650B /* Mission Plausible.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mission Plausible.ogg"; sourceTree = "<group>"; };
+		BD46A27E1E6C14800050650B /* Infinite Descent.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Infinite Descent.ogg"; sourceTree = "<group>"; };
+		BD46A27F1E6C14800050650B /* Polka Train.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Polka Train.ogg"; sourceTree = "<group>"; };
+		BD46A2801E6C14800050650B /* Swinging Pants.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Swinging Pants.ogg"; sourceTree = "<group>"; };
+		BD46A2811E6C14880050650B /* Sad Descent.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sad Descent.ogg"; sourceTree = "<group>"; };
+		BD46A2821E6C14880050650B /* Sad Town.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sad Town.ogg"; sourceTree = "<group>"; };
+		BD46A2831E6C14880050650B /* Space Cadet.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Cadet.ogg"; sourceTree = "<group>"; };
+		BD46A2841E6C14980050650B /* rumble1.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble1.ogg; sourceTree = "<group>"; };
+		BD46A2851E6C14980050650B /* rumble2.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble2.ogg; sourceTree = "<group>"; };
+		BD46A2861E6C14980050650B /* rumble3.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble3.ogg; sourceTree = "<group>"; };
+		BD46A2871E6C14A50050650B /* laser5.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser5.ogg; sourceTree = "<group>"; };
 		BD5256681E6BCA0700F7C530 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlymanAnimations.sks; sourceTree = "<group>"; };
 		BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +69,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD46A2761E6C14470050650B /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				BD46A2871E6C14A50050650B /* laser5.ogg */,
+				BD46A2841E6C14980050650B /* rumble1.ogg */,
+				BD46A2851E6C14980050650B /* rumble2.ogg */,
+				BD46A2861E6C14980050650B /* rumble3.ogg */,
+			);
+			name = SoundEffects;
+			sourceTree = "<group>";
+		};
+		BD46A2771E6C144E0050650B /* BackgroundMusic */ = {
+			isa = PBXGroup;
+			children = (
+				BD46A27E1E6C14800050650B /* Infinite Descent.ogg */,
+				BD46A27F1E6C14800050650B /* Polka Train.ogg */,
+				BD46A2801E6C14800050650B /* Swinging Pants.ogg */,
+				BD46A2781E6C14640050650B /* Flowing Rocks.ogg */,
+				BD46A2791E6C14640050650B /* Game Over.ogg */,
+				BD46A2811E6C14880050650B /* Sad Descent.ogg */,
+				BD46A2821E6C14880050650B /* Sad Town.ogg */,
+				BD46A2831E6C14880050650B /* Space Cadet.ogg */,
+				BD46A27A1E6C14640050650B /* German Virtue.ogg */,
+				BD46A27B1E6C14640050650B /* Italian Mom.ogg */,
+				BD46A27C1E6C14640050650B /* Mishief Stroll.ogg */,
+				BD46A27D1E6C14640050650B /* Mission Plausible.ogg */,
+			);
+			name = BackgroundMusic;
+			sourceTree = "<group>";
+		};
 		BD5256671E6BC9E300F7C530 /* HelperFunctions */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +134,8 @@
 		BD707F931E6B9C0200CEEAD2 /* ShootingGallery */ = {
 			isa = PBXGroup;
 			children = (
+				BD46A2771E6C144E0050650B /* BackgroundMusic */,
+				BD46A2761E6C14470050650B /* SoundEffects */,
 				BD52566A1E6BCAF700F7C530 /* Animations */,
 				BD5256671E6BC9E300F7C530 /* HelperFunctions */,
 				BD707FAF1E6BB10800CEEAD2 /* BackgroundLayouts */,
@@ -96,6 +146,7 @@
 				BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */,
 				BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */,
 				BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */,
+				BD46A2741E6C016E0050650B /* HUD.swift */,
 				BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */,
 				BD707FA61E6B9C0200CEEAD2 /* Info.plist */,
 			);
@@ -199,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD707F9B1E6B9C0200CEEAD2 /* TestScene1.swift in Sources */,
+				BD46A2751E6C016E0050650B /* HUD.swift in Sources */,
 				BD707F9D1E6B9C0200CEEAD2 /* GameViewController.swift in Sources */,
 				BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */,
 				BD5256691E6BCA0700F7C530 /* Background.swift in Sources */,
