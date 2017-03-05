@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		BD46A2751E6C016E0050650B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46A2741E6C016E0050650B /* HUD.swift */; };
+		BD46A28E1E6C4A7B0050650B /* Cheerful Annoyance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */; };
+		BD46A28F1E6C4A7B0050650B /* Drumming Sticks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28A1E6C4A7B0050650B /* Drumming Sticks.mp3 */; };
+		BD46A2901E6C4A7B0050650B /* Farm Frolics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28B1E6C4A7B0050650B /* Farm Frolics.mp3 */; };
+		BD46A2911E6C4A7B0050650B /* Flowing Rocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28C1E6C4A7B0050650B /* Flowing Rocks.mp3 */; };
+		BD46A2921E6C4A7B0050650B /* Game Over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28D1E6C4A7B0050650B /* Game Over.mp3 */; };
+		BD46A2981E6C4AB30050650B /* German Virtue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2931E6C4AB30050650B /* German Virtue.mp3 */; };
+		BD46A2991E6C4AB30050650B /* Infinite Descent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2941E6C4AB30050650B /* Infinite Descent.mp3 */; };
+		BD46A29A1E6C4AB30050650B /* Italian Mom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2951E6C4AB30050650B /* Italian Mom.mp3 */; };
+		BD46A29B1E6C4AB30050650B /* Mishief Stroll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2961E6C4AB30050650B /* Mishief Stroll.mp3 */; };
+		BD46A29C1E6C4AB30050650B /* Mission Plausible.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2971E6C4AB30050650B /* Mission Plausible.mp3 */; };
+		BD46A2A71E6C50870050650B /* laser1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A29E1E6C50870050650B /* laser1.wav */; };
+		BD46A2A81E6C50870050650B /* laser2.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A29F1E6C50870050650B /* laser2.wav */; };
+		BD46A2A91E6C50870050650B /* laser3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A01E6C50870050650B /* laser3.wav */; };
+		BD46A2AA1E6C50870050650B /* laser4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A11E6C50870050650B /* laser4.wav */; };
+		BD46A2AB1E6C50870050650B /* laser5.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A21E6C50870050650B /* laser5.wav */; };
+		BD46A2AC1E6C50870050650B /* laser6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A31E6C50870050650B /* laser6.wav */; };
+		BD46A2AD1E6C50870050650B /* laser7.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A41E6C50870050650B /* laser7.wav */; };
+		BD46A2AE1E6C50870050650B /* laser8.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A51E6C50870050650B /* laser8.wav */; };
+		BD46A2AF1E6C50870050650B /* laser9.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2A61E6C50870050650B /* laser9.wav */; };
+		BD46A2B21E6C51490050650B /* rumble2.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2B01E6C51490050650B /* rumble2.wav */; };
+		BD46A2B31E6C51490050650B /* rumble3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2B11E6C51490050650B /* rumble3.wav */; };
 		BD5256691E6BCA0700F7C530 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5256681E6BCA0700F7C530 /* Background.swift */; };
 		BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */; };
 		BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */; };
@@ -25,22 +46,28 @@
 
 /* Begin PBXFileReference section */
 		BD46A2741E6C016E0050650B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
-		BD46A2781E6C14640050650B /* Flowing Rocks.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flowing Rocks.ogg"; sourceTree = "<group>"; };
-		BD46A2791E6C14640050650B /* Game Over.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Game Over.ogg"; sourceTree = "<group>"; };
-		BD46A27A1E6C14640050650B /* German Virtue.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "German Virtue.ogg"; sourceTree = "<group>"; };
-		BD46A27B1E6C14640050650B /* Italian Mom.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Italian Mom.ogg"; sourceTree = "<group>"; };
-		BD46A27C1E6C14640050650B /* Mishief Stroll.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mishief Stroll.ogg"; sourceTree = "<group>"; };
-		BD46A27D1E6C14640050650B /* Mission Plausible.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mission Plausible.ogg"; sourceTree = "<group>"; };
-		BD46A27E1E6C14800050650B /* Infinite Descent.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Infinite Descent.ogg"; sourceTree = "<group>"; };
-		BD46A27F1E6C14800050650B /* Polka Train.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Polka Train.ogg"; sourceTree = "<group>"; };
-		BD46A2801E6C14800050650B /* Swinging Pants.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Swinging Pants.ogg"; sourceTree = "<group>"; };
-		BD46A2811E6C14880050650B /* Sad Descent.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sad Descent.ogg"; sourceTree = "<group>"; };
-		BD46A2821E6C14880050650B /* Sad Town.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sad Town.ogg"; sourceTree = "<group>"; };
-		BD46A2831E6C14880050650B /* Space Cadet.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Cadet.ogg"; sourceTree = "<group>"; };
-		BD46A2841E6C14980050650B /* rumble1.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble1.ogg; sourceTree = "<group>"; };
-		BD46A2851E6C14980050650B /* rumble2.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble2.ogg; sourceTree = "<group>"; };
-		BD46A2861E6C14980050650B /* rumble3.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = rumble3.ogg; sourceTree = "<group>"; };
-		BD46A2871E6C14A50050650B /* laser5.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser5.ogg; sourceTree = "<group>"; };
+		BD46A2881E6C49F10050650B /* backgroundMusic1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic1.aif; sourceTree = "<group>"; };
+		BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cheerful Annoyance.mp3"; sourceTree = "<group>"; };
+		BD46A28A1E6C4A7B0050650B /* Drumming Sticks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Drumming Sticks.mp3"; sourceTree = "<group>"; };
+		BD46A28B1E6C4A7B0050650B /* Farm Frolics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Farm Frolics.mp3"; sourceTree = "<group>"; };
+		BD46A28C1E6C4A7B0050650B /* Flowing Rocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Flowing Rocks.mp3"; sourceTree = "<group>"; };
+		BD46A28D1E6C4A7B0050650B /* Game Over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Game Over.mp3"; sourceTree = "<group>"; };
+		BD46A2931E6C4AB30050650B /* German Virtue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "German Virtue.mp3"; sourceTree = "<group>"; };
+		BD46A2941E6C4AB30050650B /* Infinite Descent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Infinite Descent.mp3"; sourceTree = "<group>"; };
+		BD46A2951E6C4AB30050650B /* Italian Mom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Italian Mom.mp3"; sourceTree = "<group>"; };
+		BD46A2961E6C4AB30050650B /* Mishief Stroll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mishief Stroll.mp3"; sourceTree = "<group>"; };
+		BD46A2971E6C4AB30050650B /* Mission Plausible.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mission Plausible.mp3"; sourceTree = "<group>"; };
+		BD46A29E1E6C50870050650B /* laser1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser1.wav; sourceTree = "<group>"; };
+		BD46A29F1E6C50870050650B /* laser2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser2.wav; sourceTree = "<group>"; };
+		BD46A2A01E6C50870050650B /* laser3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser3.wav; sourceTree = "<group>"; };
+		BD46A2A11E6C50870050650B /* laser4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser4.wav; sourceTree = "<group>"; };
+		BD46A2A21E6C50870050650B /* laser5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser5.wav; sourceTree = "<group>"; };
+		BD46A2A31E6C50870050650B /* laser6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser6.wav; sourceTree = "<group>"; };
+		BD46A2A41E6C50870050650B /* laser7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser7.wav; sourceTree = "<group>"; };
+		BD46A2A51E6C50870050650B /* laser8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser8.wav; sourceTree = "<group>"; };
+		BD46A2A61E6C50870050650B /* laser9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser9.wav; sourceTree = "<group>"; };
+		BD46A2B01E6C51490050650B /* rumble2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rumble2.wav; sourceTree = "<group>"; };
+		BD46A2B11E6C51490050650B /* rumble3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rumble3.wav; sourceTree = "<group>"; };
 		BD5256681E6BCA0700F7C530 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlymanAnimations.sks; sourceTree = "<group>"; };
 		BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +99,17 @@
 		BD46A2761E6C14470050650B /* SoundEffects */ = {
 			isa = PBXGroup;
 			children = (
-				BD46A2871E6C14A50050650B /* laser5.ogg */,
-				BD46A2841E6C14980050650B /* rumble1.ogg */,
-				BD46A2851E6C14980050650B /* rumble2.ogg */,
-				BD46A2861E6C14980050650B /* rumble3.ogg */,
+				BD46A2B01E6C51490050650B /* rumble2.wav */,
+				BD46A2B11E6C51490050650B /* rumble3.wav */,
+				BD46A29E1E6C50870050650B /* laser1.wav */,
+				BD46A29F1E6C50870050650B /* laser2.wav */,
+				BD46A2A01E6C50870050650B /* laser3.wav */,
+				BD46A2A11E6C50870050650B /* laser4.wav */,
+				BD46A2A21E6C50870050650B /* laser5.wav */,
+				BD46A2A31E6C50870050650B /* laser6.wav */,
+				BD46A2A41E6C50870050650B /* laser7.wav */,
+				BD46A2A51E6C50870050650B /* laser8.wav */,
+				BD46A2A61E6C50870050650B /* laser9.wav */,
 			);
 			name = SoundEffects;
 			sourceTree = "<group>";
@@ -83,20 +117,27 @@
 		BD46A2771E6C144E0050650B /* BackgroundMusic */ = {
 			isa = PBXGroup;
 			children = (
-				BD46A27E1E6C14800050650B /* Infinite Descent.ogg */,
-				BD46A27F1E6C14800050650B /* Polka Train.ogg */,
-				BD46A2801E6C14800050650B /* Swinging Pants.ogg */,
-				BD46A2781E6C14640050650B /* Flowing Rocks.ogg */,
-				BD46A2791E6C14640050650B /* Game Over.ogg */,
-				BD46A2811E6C14880050650B /* Sad Descent.ogg */,
-				BD46A2821E6C14880050650B /* Sad Town.ogg */,
-				BD46A2831E6C14880050650B /* Space Cadet.ogg */,
-				BD46A27A1E6C14640050650B /* German Virtue.ogg */,
-				BD46A27B1E6C14640050650B /* Italian Mom.ogg */,
-				BD46A27C1E6C14640050650B /* Mishief Stroll.ogg */,
-				BD46A27D1E6C14640050650B /* Mission Plausible.ogg */,
+				BD46A29D1E6C4B560050650B /* aif */,
+				BD46A2931E6C4AB30050650B /* German Virtue.mp3 */,
+				BD46A2941E6C4AB30050650B /* Infinite Descent.mp3 */,
+				BD46A2951E6C4AB30050650B /* Italian Mom.mp3 */,
+				BD46A2961E6C4AB30050650B /* Mishief Stroll.mp3 */,
+				BD46A2971E6C4AB30050650B /* Mission Plausible.mp3 */,
+				BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */,
+				BD46A28A1E6C4A7B0050650B /* Drumming Sticks.mp3 */,
+				BD46A28B1E6C4A7B0050650B /* Farm Frolics.mp3 */,
+				BD46A28C1E6C4A7B0050650B /* Flowing Rocks.mp3 */,
+				BD46A28D1E6C4A7B0050650B /* Game Over.mp3 */,
 			);
 			name = BackgroundMusic;
+			sourceTree = "<group>";
+		};
+		BD46A29D1E6C4B560050650B /* aif */ = {
+			isa = PBXGroup;
+			children = (
+				BD46A2881E6C49F10050650B /* backgroundMusic1.aif */,
+			);
+			name = aif;
 			sourceTree = "<group>";
 		};
 		BD5256671E6BC9E300F7C530 /* HelperFunctions */ = {
@@ -230,15 +271,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD46A29C1E6C4AB30050650B /* Mission Plausible.mp3 in Resources */,
+				BD46A2981E6C4AB30050650B /* German Virtue.mp3 in Resources */,
+				BD46A2AA1E6C50870050650B /* laser4.wav in Resources */,
+				BD46A28E1E6C4A7B0050650B /* Cheerful Annoyance.mp3 in Resources */,
+				BD46A2AE1E6C50870050650B /* laser8.wav in Resources */,
 				BD707FB31E6BB34300CEEAD2 /* Castle.sks in Resources */,
 				BD707FA01E6B9C0200CEEAD2 /* Main.storyboard in Resources */,
+				BD46A28F1E6C4A7B0050650B /* Drumming Sticks.mp3 in Resources */,
+				BD46A2A71E6C50870050650B /* laser1.wav in Resources */,
+				BD46A2911E6C4A7B0050650B /* Flowing Rocks.mp3 in Resources */,
 				BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */,
+				BD46A2AB1E6C50870050650B /* laser5.wav in Resources */,
+				BD46A29A1E6C4AB30050650B /* Italian Mom.mp3 in Resources */,
 				BD707F971E6B9C0200CEEAD2 /* TestScene1.sks in Resources */,
+				BD46A29B1E6C4AB30050650B /* Mishief Stroll.mp3 in Resources */,
 				BD707FA21E6B9C0200CEEAD2 /* Assets.xcassets in Resources */,
+				BD46A2B21E6C51490050650B /* rumble2.wav in Resources */,
 				BD707FAE1E6B9CE900CEEAD2 /* Background1.sks in Resources */,
 				BD707FA51E6B9C0200CEEAD2 /* LaunchScreen.storyboard in Resources */,
 				BD707FB11E6BB18800CEEAD2 /* Desert.sks in Resources */,
+				BD46A2AD1E6C50870050650B /* laser7.wav in Resources */,
+				BD46A2A91E6C50870050650B /* laser3.wav in Resources */,
+				BD46A2901E6C4A7B0050650B /* Farm Frolics.mp3 in Resources */,
 				BD707F991E6B9C0200CEEAD2 /* Actions.sks in Resources */,
+				BD46A2AC1E6C50870050650B /* laser6.wav in Resources */,
+				BD46A2B31E6C51490050650B /* rumble3.wav in Resources */,
+				BD46A2991E6C4AB30050650B /* Infinite Descent.mp3 in Resources */,
+				BD46A2A81E6C50870050650B /* laser2.wav in Resources */,
+				BD46A2AF1E6C50870050650B /* laser9.wav in Resources */,
+				BD46A2921E6C4A7B0050650B /* Game Over.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

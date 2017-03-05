@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 enum BackgroundType{
     case TargetRange
@@ -105,6 +106,30 @@ class GameScene: SKScene {
         //Configure HUD display
         configureHUDFor(parentNode: self)
         
+        
+        //Preload Sounds
+        
+        do {
+            let sounds: [String] = [
+            "laser1","laser2","laser3","laser4","laser5","laser6","laser7","laser8","laser9",
+            "rumble2","rumble3"
+            ]
+            
+            for sound in sounds{
+                let path: String = Bundle.main.path(forResource: sound, ofType: "wav")!
+                let url: URL = URL(fileURLWithPath: path)
+                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                player.prepareToPlay()
+            }
+            
+        } catch {
+            //Error handling code
+        }
+        
+        //Configure Background Music
+        let bg: SKAudioNode = SKAudioNode(fileNamed: "Mishief Stroll.mp3")
+        bg.autoplayLooped = true
+        self.addChild(bg)
        
        
     }
@@ -145,6 +170,7 @@ class GameScene: SKScene {
                     }
                 }
                 
+                self.run(SKAction.playSoundFileNamed("laser7", waitForCompletion: false))
                 if let crossHair = mainCrossHair, crossHair.contains(touchPoint){
                     wingmanRespondsToHitAt(touchLocation: touchPoint)
                     flymanRespondsToHitAt(touchLoaction: touchPoint)
@@ -383,8 +409,12 @@ class GameScene: SKScene {
             ], timePerFrame: 0.30)
         
 
+        let explosionAnimationWithSound = SKAction.group([
+            SKAction.playSoundFileNamed("rumble3", waitForCompletion: false),
+            explosionAnimation
+            ])
         
-        spriteNode.run(explosionAnimation, withKey: "delayedExplosion")
+        spriteNode.run(explosionAnimationWithSound, withKey: "delayedExplosion")
         
     }
     

@@ -1,0 +1,19 @@
+//Create a swarm of bees, the Queen bee is the root node, all of the other bees are added as subsides; the Queen Bee is smaller than the other bees and harder to hit; if the player can hit the Queen Bee, all of the other bees die
+
+//Bats fly in a dark environment; a light must be attached to the crosshairs in order to make the bats visible; this will be a more difficult level
+
+//Madfly requires two hits to be killed; the first hit causes madly to lose opacity and to fly faster
+
+//Space aliens and alien ships are also available
+
+//Another enemy types spawns two news clones for each one destroyed; the player must be use a 2-bullet crosshair to destroy the newly spawned enemies
+
+//Other enemies can lift gun and fire back at user, if user is hit, screen shows a red overlay; these enemies must be hit before they can fire at the player
+
+//Standing/walking aliens, animal faces
+
+//The
+
+//Other game levels:
+	-Use particle emitters to create snow and rain to obstruct the player’s vision
+	-Escort the plane protect a plane; make sure it can fly across the screen without 		getting hit by an enemy
