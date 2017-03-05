@@ -17,8 +17,8 @@ enum BackgroundType{
 
 class GameScene: SKScene {
     //Change Gun Label
-    var crossHairToggleControl: SKLabelNode?
-    
+    var crossHairToggleControl: SKNode?
+    var gunToggleAtlas = SKTextureAtlas(named: "Toggles")
     
     //Player Stats
     var numberOfBullets: Int = 5
@@ -104,6 +104,8 @@ class GameScene: SKScene {
         
         //Configure HUD display
         configureHUDFor(parentNode: self)
+        
+       
        
     }
     
@@ -473,19 +475,33 @@ class GameScene: SKScene {
     
     
     private func configureCrossHairToggle(parentNode: SKNode){
+        
+        let toggleTexture = gunToggleAtlas.textureNamed("joystickUp")
+        crossHairToggleControl = SKSpriteNode(texture: toggleTexture)
+        
+        if let crossHairToggle = crossHairToggleControl{
+            crossHairToggle.position = CGPoint(x: 180, y: -150)
+            crossHairToggle.zPosition = 5
+        }
+    
+        /**
         crossHairToggleControl = SKLabelNode(text: "Change Gun")
         crossHairToggleControl?.horizontalAlignmentMode = .left
-        crossHairToggleControl?.verticalAlignmentMode = .top
-        /** TODO: Position of Node should be dependent on size of scene, not hardcoded**/
-        //let xPos = (self.size.width/2)
-        //let yPos = (-self.size.height/2)
-        //crossHairToggleControl?.position = CGPoint(x: xPos, y: yPos)
+        crossHairToggleControl?.verticalAlignmentMode = .top **/
         
+        /** TODO: Position of Node should be dependent on size of scene, not hardcoded**/
+        /**
+        let xPos = (self.size.width/2)
+        let yPos = (-self.size.height/2)
+        crossHairToggleControl?.position = CGPoint(x: xPos, y: yPos)
+        **/
+        
+        /**
         crossHairToggleControl?.position = CGPoint(x: 80, y: -120)
         crossHairToggleControl?.zPosition = 5
         crossHairToggleControl?.color = SKColor.blue
         crossHairToggleControl?.fontColor = SKColor.orange
-        
+        **/
         
         if let crossHairToggle = crossHairToggleControl{
             showDebuggingInfo()
@@ -497,17 +513,30 @@ class GameScene: SKScene {
     }
     
     private func toggleMainCrosshair(){
-        if let mainCrossHair = mainCrossHair{
+        if let mainCrossHair = mainCrossHair, let crossHairToggle = crossHairToggleControl as? SKSpriteNode{
             if(currentCrossHairIndex < crossHairTextures.count-1){
                 currentCrossHairIndex += 1
             } else {
                 currentCrossHairIndex = 0
             }
             
-            print("Crosshair index is now: \(currentCrossHairIndex)")
-            let nextCrossHairTexture = crossHairTextures[currentCrossHairIndex]
-            let changeTextureAction = SKAction.setTexture(nextCrossHairTexture)
-            mainCrossHair.run(changeTextureAction)
+            let toggleAnimation = SKAction.animate(with: [
+                gunToggleAtlas.textureNamed("joystickUp"),
+                gunToggleAtlas.textureNamed("joystickLeft"),
+                gunToggleAtlas.textureNamed("joystickUp"),
+                ], timePerFrame: 0.20)
+            
+            crossHairToggle.run(SKAction.sequence([
+                toggleAnimation,
+                SKAction.run({
+                    print("Crosshair index is now: \(self.currentCrossHairIndex)")
+                    let nextCrossHairTexture = self.crossHairTextures[self.currentCrossHairIndex]
+                    let changeTextureAction = SKAction.setTexture(nextCrossHairTexture)
+                    self.mainCrossHair!.run(changeTextureAction)
+                })
+                ]))
+            
+         
         }
     }
 
