@@ -14,36 +14,36 @@ class HUD{
     var bulletNodes: [SKSpriteNode] = []
     let killCountText = SKLabelNode(text: "00000")
     
+    var hudAtlas = SKTextureAtlas(named: "HUD.atlas")
+    
     var scoreIconTexture: SKTexture?
     var bulletNodeTexture: SKTexture?
     
-    init(newBulletTexture: SKTexture, newScoreTexture: SKTexture){
-        scoreIconTexture = newScoreTexture
-        bulletNodeTexture = newBulletTexture
-    }
    
     
     func createHUDNodes(screenSize: CGSize) -> SKNode{
         
         let newHUDNode = SKNode()
         
-        let scoreIconTexture = self.scoreIconTexture ?? SKTexture(image: #imageLiteral(resourceName: "text_score"))
+        let scoreIconTexture = self.scoreIconTexture ?? hudAtlas.textureNamed("text_score")
         
-        let bulletTexture = self.bulletNodeTexture ?? SKTexture(image: #imageLiteral(resourceName: "icon_bullet_silver_long"))
+        let bulletTexture = self.bulletNodeTexture ?? hudAtlas.textureNamed("icon_bullet_gold_long")
             
         
         let scoreIconSize = scoreIconTexture.size()
         
         let scoreIcon = SKSpriteNode(texture: scoreIconTexture)
-        
+        scoreIcon.xScale *= 0.7
+        scoreIcon.yScale *= 0.7
         //Configure the size and position of the Kill score icon (assume a scene anchore point of (0.5,0.5)
-        let scoreIconYPos = screenSize.height/2-23
-        let scoreIconXPos = -screenSize.width/2 + 20
+        let scoreIconYPos = CGFloat(180.0)//screenSize.height/2-23
+        let scoreIconXPos = CGFloat(-250.0)//-screenSize.width/2 + 20
         scoreIcon.position = CGPoint(x: scoreIconXPos, y: scoreIconYPos)
         
         //Configure the killCountText display
         killCountText.fontName = "IowanOldStyle-Bold"
-        killCountText.position = CGPoint(x: scoreIconYPos + scoreIconSize.width + 10, y: scoreIconYPos)
+        killCountText.fontColor = SKColor.black
+        killCountText.position = CGPoint(x: scoreIconYPos, y: scoreIconYPos)
         
         killCountText.verticalAlignmentMode = .center
         killCountText.horizontalAlignmentMode = .left
@@ -57,8 +57,8 @@ class HUD{
             
             let newBulletNode = SKSpriteNode(texture: bulletTexture)
             
-            let yPos = scoreIconYPos - scoreIconSize.height - 10
-            let xPos = scoreIconXPos + CGFloat(index)*(bulletSize.width + 5.0)
+            let yPos = scoreIconYPos - scoreIconSize.height
+            let xPos = scoreIconXPos - 50 + CGFloat(index)*(bulletSize.width + 5.0)
             newBulletNode.position = CGPoint(x: xPos, y: yPos)
             bulletNodes.append(newBulletNode)
             newHUDNode.addChild(newBulletNode)

@@ -26,7 +26,7 @@ class GameScene: SKScene {
     var numberOfKills: Int = 0
     
     //HUD instance
-    let hud = HUD(newBulletTexture: SKTexture(image: #imageLiteral(resourceName: "icon_bullet_silver_long")), newScoreTexture: SKTexture(image: #imageLiteral(resourceName: "text_score")))
+    let hud = HUD()
     
     //Background and CrossHair(Player)
     var background: SKSpriteNode?
@@ -99,6 +99,8 @@ class GameScene: SKScene {
         //Configure Flyman
         configureFlymanFor(parentNode: self)
         
+        //Configure WingMan
+        configureWingmanFor(parentNode: self)
         
         //Configure CrossHairToggle Control
         configureCrossHairToggle(parentNode: self)
@@ -242,8 +244,6 @@ class GameScene: SKScene {
             break
         case .Castle:
             configureBackground3()
-            break
-        default:
             break
         }
     }
@@ -498,7 +498,7 @@ class GameScene: SKScene {
     }
     
     private func configureHUDFor(parentNode: SKNode){
-        var newHUDnode = hud.createHUDNodes(screenSize: self.size)
+        let newHUDnode = hud.createHUDNodes(screenSize: self.size)
         newHUDnode.zPosition = 5
         parentNode.addChild(newHUDnode)
     }
