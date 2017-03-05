@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD5256691E6BCA0700F7C530 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5256681E6BCA0700F7C530 /* Background.swift */; };
+		BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */; };
+		BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */; };
+		BD707F971E6B9C0200CEEAD2 /* TestScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707F961E6B9C0200CEEAD2 /* TestScene1.sks */; };
+		BD707F991E6B9C0200CEEAD2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707F981E6B9C0200CEEAD2 /* Actions.sks */; };
+		BD707F9B1E6B9C0200CEEAD2 /* TestScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F9A1E6B9C0200CEEAD2 /* TestScene1.swift */; };
+		BD707F9D1E6B9C0200CEEAD2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */; };
+		BD707FA01E6B9C0200CEEAD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */; };
+		BD707FA21E6B9C0200CEEAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */; };
+		BD707FA51E6B9C0200CEEAD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */; };
+		BD707FAE1E6B9CE900CEEAD2 /* Background1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707FAD1E6B9CE900CEEAD2 /* Background1.sks */; };
+		BD707FB11E6BB18800CEEAD2 /* Desert.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707FB01E6BB18800CEEAD2 /* Desert.sks */; };
+		BD707FB31E6BB34300CEEAD2 /* Castle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707FB21E6BB34300CEEAD2 /* Castle.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD5256681E6BCA0700F7C530 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlymanAnimations.sks; sourceTree = "<group>"; };
+		BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD707F961E6B9C0200CEEAD2 /* TestScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene1.sks; sourceTree = "<group>"; };
+		BD707F981E6B9C0200CEEAD2 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		BD707F9A1E6B9C0200CEEAD2 /* TestScene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScene1.swift; sourceTree = "<group>"; };
+		BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BD707F9F1E6B9C0200CEEAD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD707FA41E6B9C0200CEEAD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD707FA61E6B9C0200CEEAD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD707FAD1E6B9CE900CEEAD2 /* Background1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Background1.sks; sourceTree = "<group>"; };
+		BD707FB01E6BB18800CEEAD2 /* Desert.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Desert.sks; sourceTree = "<group>"; };
+		BD707FB21E6BB34300CEEAD2 /* Castle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Castle.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD707F8E1E6B9C0200CEEAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD5256671E6BC9E300F7C530 /* HelperFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				BD5256681E6BCA0700F7C530 /* Background.swift */,
+			);
+			name = HelperFunctions;
+			sourceTree = "<group>";
+		};
+		BD52566A1E6BCAF700F7C530 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		BD707F881E6B9C0200CEEAD2 = {
+			isa = PBXGroup;
+			children = (
+				BD707F931E6B9C0200CEEAD2 /* ShootingGallery */,
+				BD707F921E6B9C0200CEEAD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD707F921E6B9C0200CEEAD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD707F931E6B9C0200CEEAD2 /* ShootingGallery */ = {
+			isa = PBXGroup;
+			children = (
+				BD52566A1E6BCAF700F7C530 /* Animations */,
+				BD5256671E6BC9E300F7C530 /* HelperFunctions */,
+				BD707FAF1E6BB10800CEEAD2 /* BackgroundLayouts */,
+				BD707FAC1E6B9CD300CEEAD2 /* BackgroundScenes */,
+				BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */,
+				BD707F981E6B9C0200CEEAD2 /* Actions.sks */,
+				BD707F9A1E6B9C0200CEEAD2 /* TestScene1.swift */,
+				BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */,
+				BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */,
+				BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */,
+				BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */,
+				BD707FA61E6B9C0200CEEAD2 /* Info.plist */,
+			);
+			path = ShootingGallery;
+			sourceTree = "<group>";
+		};
+		BD707FAC1E6B9CD300CEEAD2 /* BackgroundScenes */ = {
+			isa = PBXGroup;
+			children = (
+				BD707F961E6B9C0200CEEAD2 /* TestScene1.sks */,
+			);
+			name = BackgroundScenes;
+			sourceTree = "<group>";
+		};
+		BD707FAF1E6BB10800CEEAD2 /* BackgroundLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				BD707FAD1E6B9CE900CEEAD2 /* Background1.sks */,
+				BD707FB01E6BB18800CEEAD2 /* Desert.sks */,
+				BD707FB21E6BB34300CEEAD2 /* Castle.sks */,
+			);
+			name = BackgroundLayouts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD707F901E6B9C0200CEEAD2 /* ShootingGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD707FA91E6B9C0200CEEAD2 /* Build configuration list for PBXNativeTarget "ShootingGallery" */;
+			buildPhases = (
+				BD707F8D1E6B9C0200CEEAD2 /* Sources */,
+				BD707F8E1E6B9C0200CEEAD2 /* Frameworks */,
+				BD707F8F1E6B9C0200CEEAD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShootingGallery;
+			productName = ShootingGallery;
+			productReference = BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD707F891E6B9C0200CEEAD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Changzhou Panda";
+				TargetAttributes = {
+					BD707F901E6B9C0200CEEAD2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD707F8C1E6B9C0200CEEAD2 /* Build configuration list for PBXProject "ShootingGallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD707F881E6B9C0200CEEAD2;
+			productRefGroup = BD707F921E6B9C0200CEEAD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD707F901E6B9C0200CEEAD2 /* ShootingGallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD707F8F1E6B9C0200CEEAD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD707FB31E6BB34300CEEAD2 /* Castle.sks in Resources */,
+				BD707FA01E6B9C0200CEEAD2 /* Main.storyboard in Resources */,
+				BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */,
+				BD707F971E6B9C0200CEEAD2 /* TestScene1.sks in Resources */,
+				BD707FA21E6B9C0200CEEAD2 /* Assets.xcassets in Resources */,
+				BD707FAE1E6B9CE900CEEAD2 /* Background1.sks in Resources */,
+				BD707FA51E6B9C0200CEEAD2 /* LaunchScreen.storyboard in Resources */,
+				BD707FB11E6BB18800CEEAD2 /* Desert.sks in Resources */,
+				BD707F991E6B9C0200CEEAD2 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD707F8D1E6B9C0200CEEAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD707F9B1E6B9C0200CEEAD2 /* TestScene1.swift in Sources */,
+				BD707F9D1E6B9C0200CEEAD2 /* GameViewController.swift in Sources */,
+				BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */,
+				BD5256691E6BCA0700F7C530 /* Background.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD707F9F1E6B9C0200CEEAD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD707FA41E6B9C0200CEEAD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD707FA71E6B9C0200CEEAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD707FA81E6B9C0200CEEAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD707FAA1E6B9C0200CEEAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShootingGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changzhoupanda.ShootingGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD707FAB1E6B9C0200CEEAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShootingGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changzhoupanda.ShootingGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD707F8C1E6B9C0200CEEAD2 /* Build configuration list for PBXProject "ShootingGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD707FA71E6B9C0200CEEAD2 /* Debug */,
+				BD707FA81E6B9C0200CEEAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD707FA91E6B9C0200CEEAD2 /* Build configuration list for PBXNativeTarget "ShootingGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD707FAA1E6B9C0200CEEAD2 /* Debug */,
+				BD707FAB1E6B9C0200CEEAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD707F891E6B9C0200CEEAD2 /* Project object */;
+}
