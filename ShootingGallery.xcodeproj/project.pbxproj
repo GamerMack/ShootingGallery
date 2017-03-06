@@ -31,6 +31,11 @@
 		BD46A2B31E6C51490050650B /* rumble3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2B11E6C51490050650B /* rumble3.wav */; };
 		BD5256691E6BCA0700F7C530 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5256681E6BCA0700F7C530 /* Background.swift */; };
 		BD52566C1E6BCB0C00F7C530 /* FlymanAnimations.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */; };
+		BD68E00C1E6D1BA700D5266F /* BeeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68E00B1E6D1BA700D5266F /* BeeGenerator.swift */; };
+		BD68E00F1E6D2CB700D5266F /* AnimationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68E00E1E6D2CB700D5266F /* AnimationsManager.swift */; };
+		BD68E0111E6D3F7D00D5266F /* BeeEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68E0101E6D3F7D00D5266F /* BeeEventHandler.swift */; };
+		BD68E0131E6D42A400D5266F /* BeeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68E0121E6D42A400D5266F /* BeeCreator.swift */; };
+		BD68E0151E6D488000D5266F /* AngryFlyCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68E0141E6D488000D5266F /* AngryFlyCreator.swift */; };
 		BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */; };
 		BD707F971E6B9C0200CEEAD2 /* TestScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707F961E6B9C0200CEEAD2 /* TestScene1.sks */; };
 		BD707F991E6B9C0200CEEAD2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD707F981E6B9C0200CEEAD2 /* Actions.sks */; };
@@ -70,6 +75,11 @@
 		BD46A2B11E6C51490050650B /* rumble3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rumble3.wav; sourceTree = "<group>"; };
 		BD5256681E6BCA0700F7C530 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		BD52566B1E6BCB0C00F7C530 /* FlymanAnimations.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlymanAnimations.sks; sourceTree = "<group>"; };
+		BD68E00B1E6D1BA700D5266F /* BeeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeeGenerator.swift; sourceTree = "<group>"; };
+		BD68E00E1E6D2CB700D5266F /* AnimationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsManager.swift; sourceTree = "<group>"; };
+		BD68E0101E6D3F7D00D5266F /* BeeEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeeEventHandler.swift; sourceTree = "<group>"; };
+		BD68E0121E6D42A400D5266F /* BeeCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeeCreator.swift; sourceTree = "<group>"; };
+		BD68E0141E6D488000D5266F /* AngryFlyCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngryFlyCreator.swift; sourceTree = "<group>"; };
 		BD707F911E6B9C0200CEEAD2 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD707F961E6B9C0200CEEAD2 /* TestScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene1.sks; sourceTree = "<group>"; };
@@ -156,6 +166,26 @@
 			name = Animations;
 			sourceTree = "<group>";
 		};
+		BD68E00A1E6D1B9800D5266F /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				BD68E00B1E6D1BA700D5266F /* BeeGenerator.swift */,
+				BD46A2741E6C016E0050650B /* HUD.swift */,
+				BD68E0101E6D3F7D00D5266F /* BeeEventHandler.swift */,
+				BD68E0121E6D42A400D5266F /* BeeCreator.swift */,
+				BD68E0141E6D488000D5266F /* AngryFlyCreator.swift */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+		BD68E00D1E6D2CA500D5266F /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				BD68E00E1E6D2CB700D5266F /* AnimationsManager.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
 		BD707F881E6B9C0200CEEAD2 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +205,8 @@
 		BD707F931E6B9C0200CEEAD2 /* ShootingGallery */ = {
 			isa = PBXGroup;
 			children = (
+				BD68E00D1E6D2CA500D5266F /* Singletons */,
+				BD68E00A1E6D1B9800D5266F /* Characters */,
 				BD46A2771E6C144E0050650B /* BackgroundMusic */,
 				BD46A2761E6C14470050650B /* SoundEffects */,
 				BD52566A1E6BCAF700F7C530 /* Animations */,
@@ -187,7 +219,6 @@
 				BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */,
 				BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */,
 				BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */,
-				BD46A2741E6C016E0050650B /* HUD.swift */,
 				BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */,
 				BD707FA61E6B9C0200CEEAD2 /* Info.plist */,
 			);
@@ -314,7 +345,12 @@
 				BD707F9B1E6B9C0200CEEAD2 /* TestScene1.swift in Sources */,
 				BD46A2751E6C016E0050650B /* HUD.swift in Sources */,
 				BD707F9D1E6B9C0200CEEAD2 /* GameViewController.swift in Sources */,
+				BD68E0131E6D42A400D5266F /* BeeCreator.swift in Sources */,
 				BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */,
+				BD68E0111E6D3F7D00D5266F /* BeeEventHandler.swift in Sources */,
+				BD68E00F1E6D2CB700D5266F /* AnimationsManager.swift in Sources */,
+				BD68E00C1E6D1BA700D5266F /* BeeGenerator.swift in Sources */,
+				BD68E0151E6D488000D5266F /* AngryFlyCreator.swift in Sources */,
 				BD5256691E6BCA0700F7C530 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

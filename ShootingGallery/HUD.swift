@@ -12,7 +12,7 @@ import SpriteKit
 
 class HUD{
     var bulletNodes: [SKSpriteNode] = []
-    let killCountText = SKLabelNode(text: "00000")
+    var killCountText = SKLabelNode(text: "00000")
     
     var hudAtlas = SKTextureAtlas(named: "HUD.atlas")
     
@@ -21,7 +21,7 @@ class HUD{
     
    
     
-    func createHUDNodes(screenSize: CGSize) -> SKNode{
+    func generateHUD(screenSize: CGSize) -> SKNode{
         
         let newHUDNode = SKNode()
         
@@ -41,12 +41,12 @@ class HUD{
         scoreIcon.position = CGPoint(x: scoreIconXPos, y: scoreIconYPos)
         
         //Configure the killCountText display
-        killCountText.fontName = "IowanOldStyle-Bold"
-        killCountText.fontColor = SKColor.black
-        killCountText.position = CGPoint(x: scoreIconYPos, y: scoreIconYPos)
+        self.killCountText.fontName = "IowanOldStyle-Bold"
+        self.killCountText.fontColor = SKColor.black
+        self.killCountText.position = CGPoint(x: scoreIconYPos, y: scoreIconYPos)
         
-        killCountText.verticalAlignmentMode = .center
-        killCountText.horizontalAlignmentMode = .left
+        self.killCountText.verticalAlignmentMode = .center
+        self.killCountText.horizontalAlignmentMode = .left
         
         newHUDNode.addChild(killCountText)
         newHUDNode.addChild(scoreIcon)
