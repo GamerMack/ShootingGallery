@@ -14,7 +14,16 @@
 
 //Other enemies can lift gun and fire back at user, if user is hit, screen shows a red overlay; these enemies must be hit before they can fire at the player
 
-//Standing/walking aliens, animal faces
+//More enemies:
+	Flying aliens: pink, yellow, green, blue
+	Walking aliens(can hide behind obstacles)
+	Alien ships
+	Evil Sun
+	SpikeMan
+	SpringMan
+	SpikeBall
+	Cloud
+
 
 //The
 
