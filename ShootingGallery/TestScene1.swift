@@ -98,8 +98,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         //Background Configuration (TEMPORARY)
         configureBackgroundOf(type: .Castle)
-        
-        
+                
         /**If not loading physics bodies from the .sks file, create static edges around the scene to contain objects
          
         let pathRect = CGRect(x: -100, y: -100, width: 300, height: 200)
