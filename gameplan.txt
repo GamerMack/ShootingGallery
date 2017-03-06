@@ -1,8 +1,12 @@
+//Game structure: Simple linear structure; user progresses from one level to the next based on whether he wins or not; minimum of 20 levels needed
+
 //Create a swarm of bees, the Queen bee is the root node, all of the other bees are added as subsides; the Queen Bee is smaller than the other bees and harder to hit; if the player can hit the Queen Bee, all of the other bees die
 
 //Bats fly in a dark environment; a light must be attached to the crosshairs in order to make the bats visible; this will be a more difficult level
 
 //Madfly requires two hits to be killed; the first hit causes madly to lose opacity and to fly faster
+
+//Stealth alien ship: This alien ship fades in and out of the scene
 
 //Space aliens and alien ships are also available
 
