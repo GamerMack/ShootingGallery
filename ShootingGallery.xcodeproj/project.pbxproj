@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3EA4441E6D65E6009D47F2 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA4431E6D65E6009D47F2 /* MenuScene.swift */; };
+		BD3EA4491E6D735F009D47F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA4481E6D735F009D47F2 /* Constants.swift */; };
+		BD3EA44B1E6D7413009D47F2 /* TextureAtlasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */; };
 		BD46A2751E6C016E0050650B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46A2741E6C016E0050650B /* HUD.swift */; };
 		BD46A28E1E6C4A7B0050650B /* Cheerful Annoyance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */; };
 		BD46A28F1E6C4A7B0050650B /* Drumming Sticks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28A1E6C4A7B0050650B /* Drumming Sticks.mp3 */; };
@@ -50,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD3EA4431E6D65E6009D47F2 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		BD3EA4481E6D735F009D47F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureAtlasManager.swift; sourceTree = "<group>"; };
 		BD46A2741E6C016E0050650B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		BD46A2881E6C49F10050650B /* backgroundMusic1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic1.aif; sourceTree = "<group>"; };
 		BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cheerful Annoyance.mp3"; sourceTree = "<group>"; };
@@ -106,6 +112,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3EA4451E6D65EB009D47F2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EA4431E6D65E6009D47F2 /* MenuScene.swift */,
+				BD707F9A1E6B9C0200CEEAD2 /* TestScene1.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		BD3EA4461E6D6A5C009D47F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BD3EA4471E6D7354009D47F2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EA4481E6D735F009D47F2 /* Constants.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		BD46A2761E6C14470050650B /* SoundEffects */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				BD68E00E1E6D2CB700D5266F /* AnimationsManager.swift */,
+				BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -205,6 +237,9 @@
 		BD707F931E6B9C0200CEEAD2 /* ShootingGallery */ = {
 			isa = PBXGroup;
 			children = (
+				BD3EA4471E6D7354009D47F2 /* Utility */,
+				BD3EA4461E6D6A5C009D47F2 /* Controllers */,
+				BD3EA4451E6D65EB009D47F2 /* Scenes */,
 				BD68E00D1E6D2CA500D5266F /* Singletons */,
 				BD68E00A1E6D1B9800D5266F /* Characters */,
 				BD46A2771E6C144E0050650B /* BackgroundMusic */,
@@ -215,8 +250,6 @@
 				BD707FAC1E6B9CD300CEEAD2 /* BackgroundScenes */,
 				BD707F941E6B9C0200CEEAD2 /* AppDelegate.swift */,
 				BD707F981E6B9C0200CEEAD2 /* Actions.sks */,
-				BD707F9A1E6B9C0200CEEAD2 /* TestScene1.swift */,
-				BD707F9C1E6B9C0200CEEAD2 /* GameViewController.swift */,
 				BD707F9E1E6B9C0200CEEAD2 /* Main.storyboard */,
 				BD707FA11E6B9C0200CEEAD2 /* Assets.xcassets */,
 				BD707FA31E6B9C0200CEEAD2 /* LaunchScreen.storyboard */,
@@ -344,14 +377,17 @@
 			files = (
 				BD707F9B1E6B9C0200CEEAD2 /* TestScene1.swift in Sources */,
 				BD46A2751E6C016E0050650B /* HUD.swift in Sources */,
+				BD3EA4441E6D65E6009D47F2 /* MenuScene.swift in Sources */,
 				BD707F9D1E6B9C0200CEEAD2 /* GameViewController.swift in Sources */,
 				BD68E0131E6D42A400D5266F /* BeeCreator.swift in Sources */,
 				BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */,
+				BD3EA44B1E6D7413009D47F2 /* TextureAtlasManager.swift in Sources */,
 				BD68E0111E6D3F7D00D5266F /* BeeEventHandler.swift in Sources */,
 				BD68E00F1E6D2CB700D5266F /* AnimationsManager.swift in Sources */,
 				BD68E00C1E6D1BA700D5266F /* BeeGenerator.swift in Sources */,
 				BD68E0151E6D488000D5266F /* AngryFlyCreator.swift in Sources */,
 				BD5256691E6BCA0700F7C530 /* Background.swift in Sources */,
+				BD3EA4491E6D735F009D47F2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
