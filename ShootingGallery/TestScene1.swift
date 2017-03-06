@@ -18,6 +18,10 @@ enum BackgroundType{
 
 class GameScene: SKScene {
     
+    //User Options Manager
+    let userOptionsManager = UserOptionsManager.sharedInstance
+    
+    
     //Singletons
     let animationsManager = AnimationsManager.sharedInstance
     
@@ -96,6 +100,10 @@ class GameScene: SKScene {
     
     
     override func didMove(to view: SKView) {
+        
+        let difficultyLevel = userOptionsManager.getDifficultyLevel()
+        print("The selected difficulty level is \(difficultyLevel)")
+        
         //Background Configuration (TEMPORARY)
         configureBackgroundOf(type: .Castle)
                 

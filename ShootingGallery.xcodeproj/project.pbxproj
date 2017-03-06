@@ -10,6 +10,7 @@
 		BD3EA4441E6D65E6009D47F2 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA4431E6D65E6009D47F2 /* MenuScene.swift */; };
 		BD3EA4491E6D735F009D47F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA4481E6D735F009D47F2 /* Constants.swift */; };
 		BD3EA44B1E6D7413009D47F2 /* TextureAtlasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */; };
+		BD3EA44D1E6D8906009D47F2 /* UserOptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA44C1E6D8906009D47F2 /* UserOptionsManager.swift */; };
 		BD46A2751E6C016E0050650B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46A2741E6C016E0050650B /* HUD.swift */; };
 		BD46A28E1E6C4A7B0050650B /* Cheerful Annoyance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */; };
 		BD46A28F1E6C4A7B0050650B /* Drumming Sticks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD46A28A1E6C4A7B0050650B /* Drumming Sticks.mp3 */; };
@@ -56,6 +57,7 @@
 		BD3EA4431E6D65E6009D47F2 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		BD3EA4481E6D735F009D47F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureAtlasManager.swift; sourceTree = "<group>"; };
+		BD3EA44C1E6D8906009D47F2 /* UserOptionsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOptionsManager.swift; sourceTree = "<group>"; };
 		BD46A2741E6C016E0050650B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		BD46A2881E6C49F10050650B /* backgroundMusic1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic1.aif; sourceTree = "<group>"; };
 		BD46A2891E6C4A7B0050650B /* Cheerful Annoyance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cheerful Annoyance.mp3"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				BD68E00E1E6D2CB700D5266F /* AnimationsManager.swift */,
 				BD3EA44A1E6D7413009D47F2 /* TextureAtlasManager.swift */,
+				BD3EA44C1E6D8906009D47F2 /* UserOptionsManager.swift */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				BD68E0131E6D42A400D5266F /* BeeCreator.swift in Sources */,
 				BD707F951E6B9C0200CEEAD2 /* AppDelegate.swift in Sources */,
 				BD3EA44B1E6D7413009D47F2 /* TextureAtlasManager.swift in Sources */,
+				BD3EA44D1E6D8906009D47F2 /* UserOptionsManager.swift in Sources */,
 				BD68E0111E6D3F7D00D5266F /* BeeEventHandler.swift in Sources */,
 				BD68E00F1E6D2CB700D5266F /* AnimationsManager.swift in Sources */,
 				BD68E00C1E6D1BA700D5266F /* BeeGenerator.swift in Sources */,

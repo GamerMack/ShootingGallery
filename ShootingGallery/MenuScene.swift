@@ -12,20 +12,27 @@ import AVFoundation
 
 class MenuScene: SKScene{
     
-    
+    //Texture Atlas for MenuScene
     let textureAtlas: SKTextureAtlas? = TextureAtlasManager.sharedInstance.getTextureAtlasOfType(textureAtlasType: .UI)
     
+    //Menu Button
     let startButton: SKSpriteNode = SKSpriteNode()
+    var hardButton = SKSpriteNode()
+    var mediumButton = SKSpriteNode()
+    var easyButton = SKSpriteNode()
     
+    //User Options Manager
+    let userOptionsManager = UserOptionsManager.sharedInstance
     
     override func didMove(to view: SKView) {
         
         guard let textureAtlas = textureAtlas else { return }
         
-        let bg: SKAudioNode = SKAudioNode(fileNamed: kGermanVirtue)
-        bg.autoplayLooped = true
-        self.addChild(bg)
         
+        configureBackgroundMusicForParentNode(parentNode: self, withMusicFile: kGermanVirtue)
+
+        
+       
         self.anchorPoint = CGPoint(x: 0.5,y: 0.5)
         
         let backgroundTexture = SKTexture(image: #imageLiteral(resourceName: "uncolored_desert"))
@@ -71,6 +78,7 @@ class MenuScene: SKScene{
         wingmanNode.zRotation = -45.0
         self.addChild(wingmanNode)
         
+        
         //Build label text for Start Button
         let startButtonText = SKLabelNode(fontNamed: kFuturaCondensedExtraBold)
         startButtonText.text = "Start Game"
@@ -89,20 +97,88 @@ class MenuScene: SKScene{
         startButton.run(pulseAnimation, withKey: "startPulseAnimation")
         
     
+        //Build difficulty options buttons
+        
+        hardButton = getButtonWith(textureNamed: "yellow_button06", andWithTextOf: "Hard", atPosition: CGPoint(x: 0, y: 100))
+        mediumButton = getButtonWith(textureNamed: "yellow_button06", andWithTextOf: "Medium", atPosition: CGPoint(x: 0, y: 10))
+        easyButton = getButtonWith(textureNamed: "yellow_button06", andWithTextOf: "Easy", atPosition: CGPoint(x: 0, y: -75))
+        
+        self.addChild(hardButton)
+        self.addChild(mediumButton)
+        self.addChild(easyButton)
+        
+        
+    }
+    
+    func getButtonWith(textureNamed textureName: String, andWithTextOf buttonText: String, atPosition position: CGPoint, andWithSizeOf size: CGSize = CGSize(width: 295, height: 75)) ->SKSpriteNode {
+        
+        guard let textureAtlas = self.textureAtlas else { return SKSpriteNode() }
+        
+        var button = SKSpriteNode()
+        
+        let buttonTexture = textureAtlas.textureNamed(textureName)
+        button = SKSpriteNode(texture: buttonTexture)
+        button.anchorPoint = CGPoint.zero
+        button.size = size
+        button.name = buttonText
+        button.position = position
+        button.zPosition = -20
+        
+        let buttonTextLabel = SKLabelNode(fontNamed: kFuturaCondensedMedium)
+        buttonTextLabel.text = buttonText
+        buttonTextLabel.verticalAlignmentMode = .center
+        buttonTextLabel.position = CGPoint(x: 100, y: 40)
+        buttonTextLabel.fontSize = 40
+        buttonTextLabel.fontColor = SKColor.blue
+        buttonTextLabel.name = buttonText
+        buttonTextLabel.zPosition = 3
+        
+        button.addChild(buttonTextLabel)
+        
+        return button
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
         for t in touches{
             let touchLocation = t.location(in: self)
             let nodeTouched = nodes(at: touchLocation)[0]
             
             if nodeTouched.name == "StartButton"{
-                self.view?.presentScene(GameScene(size: self.size))
+                startButton.removeAllActions()
+                startButton.run(SKAction.run({
+                    self.startButton.zPosition = -10
+                }))
+                startButton.run(SKAction.wait(forDuration: 5.0))
+                
+                hardButton.zPosition = 2
+                mediumButton.zPosition = 2
+                easyButton.zPosition = 2
+                
             
             }
+            
+            if nodeTouched.name == "Hard"{
+                userOptionsManager.setDifficultyLevel(userSelection: "Hard")
+                self.view?.presentScene(GameScene(size: self.size))
+
+            }
+            
+            
+            if nodeTouched.name == "Medium"{
+                userOptionsManager.setDifficultyLevel(userSelection: "Medium")
+                self.view?.presentScene(GameScene(size: self.size))
+            }
+            
+            if nodeTouched.name == "Easy"{
+                userOptionsManager.setDifficultyLevel(userSelection: "Easy")
+                self.view?.presentScene(GameScene(size: self.size))
+                
+            }
         }
-    }
 
 }
 
+}
